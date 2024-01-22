@@ -8,15 +8,20 @@
   <!-- favicon link start -->
   <link rel="shortcut icon" href="Images/images.jpg" type="image/x-icon">
   <!-- favicon link end -->
-  <!-- google fonts link start -->
+  <!-- google fonts cdn link start -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- google fonts link end -->
-  <!-- tailwind css & daisy ui link start -->
+  <!-- google fonts cdn link end -->
+  <!-- font awesome cdn link start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome cdn link end -->
+  <!-- tailwind css & daisy ui cdn link start -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- tailwind css & daisy ui link end -->
+  <!-- tailwind css & daisy ui cdn link end -->
   <!-- tailwind config color start -->
   <script>
     tailwind.config = {
@@ -24,6 +29,8 @@
         extend: {
           colors: {
             'primary-color': '#FF4240',
+            'banner-color': '#FFFFFF99',
+            'description-color': '#13131899',
           }
         }
       }
@@ -115,7 +122,7 @@
       <!-- carousel overlay start-->
       <div class="bg-black lg:absolute top-44 right-7 space-y-3 p-5 rounded-xl lg:w-1/2">
         <h3 class="text-white font-extrabold text-lg lg:text-xl">Meet all the heroes from the field</h3>
-        <p class="text-white font-medium opacity-60"> Widely regarded as the greatest hockey player of all time,
+        <p class="text-banner-color font-medium "> Widely regarded as the greatest hockey player of all time,
           Gretzky's extraordinary skills and vision on the ice earned him numerous records and a legacy as the "Great
           One," revolutionizing the game.</p>
       </div>
@@ -128,9 +135,10 @@
   <main class="max-w-[1440px] w-[95%] lg:w-4/5 mx-auto">
     <!-- Professional Hockeys Club start -->
     <section class="text-center">
-      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] p-8 space-y-4">
+      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] py-8 space-y-4">
         <h1 class="text-xl lg:text-3xl font-extrabold">Professional Hockeys Club</h1>
-        <p class="font-medium opacity-60 lg:w-[60%] mx-auto">A storied NHL franchise since 1924, the Boston Bruins
+        <p class="font-medium text-description-color lg:w-[60%] mx-auto">A storied NHL franchise since 1924, the Boston
+          Bruins
           embody a tradition of excellence, with six Stanley Cup victories and a dedicated fan base.</p>
       </div>
       <div class="grid gap-10 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -140,7 +148,8 @@
             <h1 class="text-2xl text-black font-extrabold">87%</h1>
           </div>
           <h4 class="text-xl font-semibold">Prayer Facility</h4>
-          <p class="font-normal opacity-60">A serene prayer facility providing a tranquil space for spiritual reflection
+          <p class="font-normal text-description-color">A serene prayer facility providing a tranquil space for
+            spiritual reflection
             and
             connection.</p>
         </div>
@@ -150,7 +159,8 @@
             <h1 class="text-2xl font-extrabold text-black">95%</h1>
           </div>
           <h4 class="text-xl font-semibold">Experienced Coach</h4>
-          <p class="font-normal opacity-60">An experienced coach with a proven track record, guiding athletes to success
+          <p class="font-normal text-description-color">An experienced coach with a proven track record, guiding
+            athletes to success
             through expertise, dedication, and strategic leadership.</p>
         </div>
 
@@ -160,7 +170,8 @@
             <h1 class="text-2xl font-extrabold text-black">90%</h1>
           </div>
           <h4 class="text-xl font-semibold">Senior Player</h4>
-          <p class="font-normal opacity-60">A seasoned senior player, bringing years of skill and leadership to the
+          <p class="font-normal text-description-color">A seasoned senior player, bringing years of skill and leadership
+            to the
             field, enriching the game with experience and prowess.</p>
         </div>
         <div class="flex items-center flex-col space-y-4">
@@ -169,7 +180,8 @@
             <h1 class="text-2xl font-extrabold text-black">80%</h1>
           </div>
           <h4 class="text-xl font-semibold">Training Ground</h4>
-          <p class="font-normal opacity-60"> A state-of-the-art training ground, cultivating excellence and pushing
+          <p class="font-normal text-description-color"> A state-of-the-art training ground, cultivating excellence and
+            pushing
             boundaries for athletes to refine their skills and reach peak performance.</p>
         </div>
 
@@ -179,38 +191,46 @@
     <!-- Professional Hockeys Club end -->
     <!-- Program Sections start -->
     <section>
-      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] p-8 space-y-4 text-center">
+      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] py-8 space-y-4 text-center">
         <h1 class="text-xl lg:text-3xl font-extrabold">Program Sections</h1>
-        <p class="font-medium opacity-60 lg:w-[60%] mx-auto">Within the program sections for hockey, the Skill
+        <p class="font-medium text-description-color lg:w-[60%] mx-auto">Within the program sections for hockey, the
+          Skill
           Development Zone focuses on refining player techniques, fostering agility, and enhancing overall game play
           proficiency.</p>
       </div>
       <div class="grid gap-5 grid-cols-1 lg:grid-cols-2">
-        
-        <div class="card p-5 lg:h-72 shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/2.png)] bg-no-repeat bg-cover">
-          <div class="card-body ">
+
+        <div
+          class="card p-5 lg:h-72 shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/2.png)] bg-no-repeat bg-cover">
+          <div class="card-body flex items-start justify-center felx-col">
             <h2 class="card-title font-extrabold text-lg lg:text-2xl">Junior Program</h2>
-            <p class=" opacity-70 font-medium">The Junior Program nurtures young talents in hockey, providing a structured pathway for skill development, teamwork, and a passion for the sport.</p>
+            <p class="font-medium">The Junior Program nurtures young talents in hockey, providing a structured pathway
+              for skill development, teamwork, and a passion for the sport.</p>
             <div class="card-actions">
               <button class="btn border-none text-white bg-primary-color">Register Now!</button>
             </div>
           </div>
         </div>
 
-        <div class="card p-5 lg:h-72  shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/3.png)] bg-no-repeat bg-cover">
-          <div class="card-body ">
+        <div
+          class="card p-5 lg:h-72  shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/3.png)] bg-no-repeat bg-cover">
+          <div class="card-body flex items-start justify-center felx-col">
             <h2 class="card-title font-extrabold text-lg lg:text-2xl">Teenager Program</h2>
-            <p class=" opacity-70 font-medium">Tailored for teenagers, the program seamlessly blends skill refinement and character development, shaping aspiring hockey players into well-rounded athletes.</p>
+            <p class="font-medium">Tailored for teenagers, the program seamlessly blends skill refinement and character
+              development, shaping aspiring hockey players into well-rounded athletes.</p>
             <div class="card-actions">
               <button class="btn border-none text-white bg-primary-color">Register Now!</button>
             </div>
           </div>
         </div>
 
-        <div class="card p-5 lg:h-80 lg:col-span-2 shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/4.png)] bg-no-repeat bg-cover">
-          <div class="card-body lg:pt-16">
+        <div
+          class="card p-5 lg:h-80 lg:col-span-2 shadow-xl text-white bg-[linear-gradient(180deg,rgba(19,19,24,.50),rgba(19,19,24,.50)),url(Images/4.png)] bg-no-repeat bg-cover">
+          <div class="card-body  flex items-start justify-center felx-col">
             <h2 class="card-title font-extrabold text-lg lg:text-2xl">Professional Program</h2>
-            <p class="lg:w-1/2 opacity-70 font-medium">The Professional Program delivers advanced coaching and specialized drills, honing the skills and strategic prowess of seasoned athletes in the pursuit of excellence on the professional hockey stage.</p>
+            <p class="lg:w-1/2 font-medium">The Professional Program delivers advanced coaching and specialized drills,
+              honing the skills and strategic prowess of seasoned athletes in the pursuit of excellence on the
+              professional hockey stage.</p>
             <div class="card-actions">
               <button class="btn border-none text-white bg-primary-color">Register Now!</button>
             </div>
@@ -219,6 +239,88 @@
       </div>
     </section>
     <!-- Program Sections end -->
+    <!-- Clients Question start -->
+    <section>
+      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] py-8 space-y-4 text-center">
+        <h1 class="text-xl lg:text-3xl font-extrabold">Clients Question</h1>
+        <p class="font-medium text-description-color lg:w-[60%] mx-auto">Explore the FAQs section on our hockey-centric
+          website – your one-stop resource for answers to common queries about game rules, player stats, and everything
+          you need to enhance your understanding and enjoyment of the thrilling hockey experience.</p>
+      </div>
+      <div class="border-2 border-[#1313181A] p-5 rounded-lg gap-10 grid grid-cols-1 lg:grid-cols-2">
+        <div class="">
+          <img src="Images/11.png" class="w-full h-96 lg:h-full" alt="">
+        </div>
+        <div class="">
+          <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-b-[#1313181A]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-b-[#1313181A]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-b-[#1313181A]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-b-[#1313181A]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-b-[#1313181A]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Booking
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 rounded-none">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Pricings
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Question end-->
+    <!-- Social Media start -->
+    <section class="bg-[#13131808] p-8 text-center my-10 rounded-lg shadow-md space-y-5">
+      <h3 class="font-extrabold text-2xl">Social Media</h3>
+     <div class="flex gap-5 justify-center text-2xl">
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+     </div>
+    </section>
+    <!-- Social Media end -->
   </main>
   <!-- main area end -->
 </body>
