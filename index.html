@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment-No-03</title>
+  <!-- favicon link start -->
+  <link rel="shortcut icon" href="Images/images.jpg" type="image/x-icon">
+  <!-- favicon link end -->
   <!-- google fonts link start -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- google fonts link end -->
   <!-- tailwind css & daisy ui link start -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -70,56 +73,108 @@
           </ul>
         </div>
         <div class="navbar-end flex items-center gap-4">
-         <button class="hidden lg:flex"> <img src="Images/Frame.png" alt=""></button>
+          <button class="hidden lg:flex"> <img src="Images/Frame.png" alt=""></button>
           <a class="btn bg-primary-color text-white hover:bg-primary-color font-medium">Get Ticket</a>
         </div>
       </div>
     </nav>
     <!-- navbar end -->
     <!-- carousel start -->
-   <div class="relative">
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full h-96">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
-          <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a> 
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+    <div class="relative">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full h-96">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide2" class="carousel-item relative w-full h-96">
-        <img src="Images/2.png" class="w-full" />
-        <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a> 
-          <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+        <div id="slide2" class="carousel-item relative w-full h-96">
+          <img src="Images/2.png" class="w-full" />
+          <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide3" class="carousel-item relative w-full h-96">
-        <img src="Images/3.png" class="w-full" />
-        <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a> 
-          <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+        <div id="slide3" class="carousel-item relative w-full h-96">
+          <img src="Images/3.png" class="w-full" />
+          <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide4" class="carousel-item relative w-full h-96">
-        <img src="Images/4.png" class="w-full" />
-        <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
-          <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a> 
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+        <div id="slide4" class="carousel-item relative w-full h-96">
+          <img src="Images/4.png" class="w-full" />
+          <div class="absolute flex gap-5 transform left-1/2  -translate-x-1/2 lg:-translate-x-0 lg:left-5 bottom-5">
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
         </div>
       </div>
+      <!-- carousel end -->
+      <!-- carousel overlay start-->
+      <div class="bg-black lg:absolute top-44 right-7 space-y-3 p-5 rounded-xl lg:w-1/2">
+        <h3 class="text-white font-extrabold text-lg lg:text-xl">Meet all the heroes from the field</h3>
+        <p class="text-white font-medium opacity-60"> Widely regarded as the greatest hockey player of all time,
+          Gretzky's extraordinary skills and vision on the ice earned him numerous records and a legacy as the "Great
+          One," revolutionizing the game.</p>
+      </div>
+      <!-- carousel overlay end -->
     </div>
-    <div class="bg-black lg:absolute top-44 right-7 space-y-3 p-5 rounded-xl lg:w-1/2">
-      <h3 class="text-white font-extrabold text-lg lg:text-xl">Meet all the heroes from the field</h3>
-      <p class="text-white font-medium opacity-60"> Widely regarded as the greatest hockey player of all time, Gretzky's extraordinary skills and vision on the ice earned him numerous records and a legacy as the "Great One," revolutionizing the game.</p>
-    </div>
-   </div>
-    <!-- carousel end -->
+
   </header>
   <!-- header area end -->
-  <main>
-    
+  <!-- main area start -->
+  <main class="max-w-[1440px] w-[98%] lg:w-4/5 mx-auto">
+    <!-- Professional Hockeys Club start -->
+    <section class="text-center">
+      <div class="mt-20 mb-10 border-y-2 border-dashed border-y-[rgba(19, 19, 24, 0.20)] p-8 space-y-4">
+        <h1 class="text-xl lg:text-3xl font-extrabold">Professional Hockeys Club</h1>
+        <p class="font-medium opacity-60 lg:w-[60%] mx-auto">A storied NHL franchise since 1924, the Boston Bruins
+          embody a tradition of excellence, with six Stanley Cup victories and a dedicated fan base.</p>
+      </div>
+      <div class="grid gap-10 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex  items-center flex-col space-y-4">
+          <div class="radial-progress text-[#ff4240] after:bg-[#e7e7e8] before:bg-[#e7e7e8]" style="--value:87;"
+            role="progressbar">
+            <h1 class="text-2xl text-black font-extrabold">87%</h1>
+          </div>
+          <h4 class="text-xl font-semibold">Prayer Facility</h4>
+          <p class="font-normal opacity-60">A serene prayer facility providing a tranquil space for spiritual reflection
+            and
+            connection.</p>
+        </div>
+        <div class="flex  items-center flex-col space-y-4">
+          <div class="radial-progress after:bg-[#e7e7e8] before:bg-[#e7e7e8] text-[#49d293]" style="--value:95;"
+            role="progressbar">
+            <h1 class="text-2xl font-extrabold text-black">95%</h1>
+          </div>
+          <h4 class="text-xl font-semibold">Experienced Coach</h4>
+          <p class="font-normal opacity-60">An experienced coach with a proven track record, guiding athletes to success
+            through expertise, dedication, and strategic leadership.</p>
+        </div>
 
+        <div class="flex  items-center flex-col space-y-4">
+          <div class="radial-progress after:bg-[#e7e7e8] before:bg-[#e7e7e8] text-[#ffb546]" style="--value:90;"
+            role="progressbar"> <h1 class="text-2xl font-extrabold text-black">90%</h1></div>
+          <h4 class="text-xl font-semibold">Senior Player</h4>
+          <p class="font-normal opacity-60">A seasoned senior player, bringing years of skill and leadership to the
+            field, enriching the game with experience and prowess.</p>
+        </div>
+        <div class="flex items-center flex-col space-y-4">
+          <div class="radial-progress after:bg-[#e7e7e8] before:bg-[#e7e7e8] text-[#4c8df1]" style="--value:80;"
+            role="progressbar"> <h1 class="text-2xl font-extrabold text-black">80%</h1></div>
+          <h4 class="text-xl font-semibold">Training Ground</h4>
+          <p class="font-normal opacity-60"> A state-of-the-art training ground, cultivating excellence and pushing
+            boundaries for athletes to refine their skills and reach peak performance.</p>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Professional Hockeys Club end -->
   </main>
+  <!-- main area end -->
 </body>
 
 </html>
